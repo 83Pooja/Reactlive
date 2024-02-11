@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
+// import About from './components/About';
+import Navbar from './components/Navbar';
+import TextForm from './components/TextForm';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+
+{/* <Navbar title="TextUtiles" abouttext="About Text"/> */}
+{/* <Navbar/> */}
+
+<Navbar title="TextUtiles" />
+
+
+<div className="container my-1">
+<TextForm heading="Enter the text to analyse below"/>
+{/* <About/> */}
+</div>
+
+  </>
   );
 }
 
